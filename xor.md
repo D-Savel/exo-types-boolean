@@ -19,4 +19,5 @@ Comme on peut le voir, l'opérateur logique XOR, ou OU exclusif, peut se défini
 
 **Nota :**
 
-    Il se différencie de l'opérateur OU inclusif, car il donne un résultat FAUX lorsque A et B ont simultanément la valeur VRAI.
+    Il se différencie de l'opérateur OU inclusif.  
+    Car il donne un résultat FAUX lorsque A et B ont simultanément la valeur VRAI.

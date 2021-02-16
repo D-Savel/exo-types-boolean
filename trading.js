@@ -1,13 +1,9 @@
-let sell = false
-let buy = false
-let stay = false
-let bitCoinValue = 39419
 let bitCoinValuePurchase = 35000
+let bitCoinValue = 50000//prompt("Please enter the Bitcoin bitCoinValue ?")
 if (bitCoinValue < 1.1 * bitCoinValuePurchase && bitCoinValue > 0.9 * bitCoinValuePurchase) {
-  stay = true
-} else if (bitCoinValue * 0.9 < bitCoinValuePurchase) {
-  buy = true
+  console.log(`Today the Bitcoin is equal to ${bitCoinValue}$\nYou purchased Bitcoin for ${bitCoinValuePurchase}$`)
+  console.log(`The bitcoin ${(bitCoinValue / bitCoinValuePurchase) < 1 ? 'decrease' : 'increase'} less than 10 %\nYou would keep your Bitcoins!`)
 } else {
-  sell = true
+  console.log(`Today the Bitcoin is equal to ${bitCoinValue}$\nYou purchased Bitcoin for ${bitCoinValuePurchase}$`)
+  console.log(`The bitcoin ${(bitCoinValue / bitCoinValuePurchase) <= 0.9 ? 'decrease more than 10 %\nYou would buy Bitcoins!' : 'increase more than 10 %\nYou would sell your Bitcoin!'}`)
 }
-console.log(`sell : ${sell} - buy : ${buy} - stay : ${stay} - BitCoinValue: ${bitCoinValuePurchase * 1.1}`)
